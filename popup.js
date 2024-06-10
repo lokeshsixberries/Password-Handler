@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
     editIndex = null;
     siteNameInput.value = '';
     passwordInput.value = '';
-    modalTitle.textContent = 'Add New Password';
+    modalTitle.textContent = '';
     modal.style.display = 'block';
   });
 
