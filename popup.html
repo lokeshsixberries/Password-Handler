@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Password Manager : Lokesh Sharma</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div id="main">
+        <table id="passwordTable">
+            <thead>
+                <tr>
+                    <th>Site Name</th>
+                    <th>Password</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="passwords">
+            </tbody>
+        </table>
+        <button id="addButton" class="btn">Add New Password</button>
+    </div>
+
+    <!-- Modal for adding/editing passwords -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Add New Password</h2>
+            <label for="siteName">Site Name:</label>
+            <input type="text" id="siteName" name="siteName">
+            <label for="password">Password:</label>
+            <input type="text" id="password" name="password">
+            <button id="saveButton" class="btn">Save</button>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

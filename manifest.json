@@ -1,0 +1,40 @@
+{
+  "name": "Password Provider",
+  "manifest_version": 3,
+  "short_name": "Auth Handler",
+  "description": "A Chrome extension for handling authentication.",
+  "version": "1.0",
+  "icons": {
+    "72": "/icons/icon-72x72.png",
+    "96": "/icons/icon-96x96.png",
+    "128": "/icons/icon-128x128.png",
+    "144": "/icons/icon-144x144.png",
+    "384": "/icons/icon-384x384.png",
+    "512": "/icons/icon-512x512.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "72": "/icons/icon-72x72.png",
+      "96": "/icons/icon-96x96.png",
+      "128": "/icons/icon-128x128.png"
+    }
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage",
+    "commands"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "openExtension": {
+      "suggested_key": {
+        "default": "Ctrl+M"
+      },
+      "description": "Open Password Manager extension"
+    }
+  }
+}
